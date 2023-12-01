@@ -1,0 +1,40 @@
+
+body:has(.mode input:checked){
+    background-color: #252525;
+}
+:root:has(.mode input:checked){
+  
+        --color-defalt:white ;
+        --color-secondray:#4d4d57;
+        --color-tery:white;
+        --color-red:#8c5e1d;
+        --color-reed: hsl(0, 80%, 48%);
+        --color-white:black;
+        --color-gray:#252525;
+
+        --color-bg:#202020;
+        --color-black:#fff;
+        --color-bgr:black;
+        --color-pto:#161616;
+    
+}
+body:has(.mode input:checked) .mode .light{
+   visibility: visible;
+  
+
+}
+body:has(.mode input:checked) .mode .dark{
+    display: none;
+  
+
+}
+body:has(.mode input:checked) .chefs .phto{
+   
+    background-image: url('../images/team-shape-dark.svg');
+
+  
+
+}
+
+
+ 

@@ -1,0 +1,929 @@
+/* _______________________ Global _____________________________________ */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --color-defalt:#212529 ;
+    --color-secondray:#37373F;
+    --color-tery:#7F7F90;
+    --color-red:#CE1212;
+    --color-reed: hsl(0, 80%, 48%);
+    --color-white:#fff;
+    --color-gray:#EEEEEE;
+    --color-bg:#fff;
+    --color-black:#000;
+    --color-bgr:#F5F5F5;
+    --color-pto:white;
+
+
+
+}
+/* ____________________________________________________________________ */
+
+/* ___________________________________________________ Nav Bar Section _______________________________________________ */
+
+.nav-bar{
+    background-color: var(--color-bg);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    width: 100%;
+  
+   
+    
+}
+.nav-bar .containar{
+    
+    width: 87%;
+    padding: 20px 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    
+    display: flex;
+    column-gap: 35px;
+    
+}
+.nav-bar ul li a{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-tery);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-decoration: none;
+     transition: all 1s ;
+
+}
+
+.nav-bar ul li {
+
+list-style-type: none;
+
+padding-bottom: 7px;
+
+position: relative;
+overflow: hidden;
+
+}
+.nav-bar ul li .line{
+    transition: all 0.8s;
+    width: 110%;
+    height: 3px;
+    background-color: var(--color-red);
+    position: absolute;
+    bottom: 0;
+    right: 110%;
+}
+.nav-bar ul li:hover .line {
+    right: 0;
+}
+.nav-bar ul li:hover a {
+    color: black;
+}
+
+.nav-bar .mode{
+   
+    font-size: 25px;
+    color: var(--color-black);
+}
+.mode .light {
+   visibility: hidden;
+}
+.nav-bar h1 a{
+    font-size: 30px;
+    color: var( --color-defalt);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    padding: 10px;
+}
+.nav-bar h1 a::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-red);
+    position: absolute;
+    right: 0;
+    bottom: 30%;
+    border-radius: 50%;
+   
+}
+body:not(:has(:target)) .home-link,
+body:has(.home:target) .home-link,
+body:has(.chefs:target) .chefs-link,
+body:has(.gallery:target) .gallery-link,
+body:has(.contact:target) .contact-link{
+    color: var(--color-black);
+}
+body:not(:has(:target)) .home-line,
+body:has(.home:target) .home-line,
+body:has(.chefs:target) .chefs-line,
+body:has(.gallery:target) .gallery-line,
+body:has(.contact:target) .contact-line {
+    right: 0;
+    
+}
+
+
+
+
+/* _______________________________________________________ End nav Bar Section _______________________________________________ */
+
+
+/* -------------------------------------------- Home Section --------------------------------------------------------------- */
+.home{
+    background-color:var(--color-gray);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+/* __________________________________________  Header section _______________________________________________________________*/
+
+.header{
+ 
+ width: 100%;
+ display: flex;
+ 
+    
+}
+.header .containar{
+
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.head-content{
+    width: 40%;
+ 
+   
+}
+.head-photo{
+    width: 38%;
+    border-radius: 50%;
+    filter: drop-shadow(4px 4px 9px #000a);
+    
+   
+}
+/* ----------------------- hovers ----------- */
+.head-photo:hover{
+   
+    animation: shake 1.5s ease-in-out infinite alternate;
+   
+}
+/* ------------------------------------------------ */
+
+.head-photo img{
+    width: 100%; 
+    
+    
+
+}
+/*  --------------------------------------------- animation --------------------------- */
+@keyframes shake {
+    0%{
+        transform: translate(0);
+    }
+    20% , 40%, 60% , 80%{
+        transform: translate(.8em);
+        box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+          
+    }
+    10%,30%,50%{
+        transform: translate(-0.2em);
+    }
+    70% , 100%{
+        transform: translate(0);
+    }
+}
+
+/* ------------------------------------------------------------------------------------------- */
+.head-content h2{
+    font-size: 65px;
+    font-family: 'Amatic SC', sans-serif;
+    color: var(--color-defalt);
+}
+.head-content p{
+    font-size: 16px;
+    color:var(--color-secondray);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-top: 20px;
+}
+.head-content .buttons{
+    
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+.buttons button{
+    transition: all 1s;
+    background-color:var(--color-red);
+    padding: 5px 30px;
+    border-radius:0px 100vh 100vh;
+    border: none;
+}
+.head-content .buttons  a{
+    transition: all 1s;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: var(--color-defalt);
+   
+}
+ .head-content .buttons .table a{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.buttons .watch-btn{
+    font-weight: 600;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.buttons .watch-btn .icon .fa-play{
+    transition: all 1s;
+    position: relative;
+    z-index: 7;
+    color: var(--color-black);
+   
+
+}
+
+.watch-btn  .icon{
+    color:var(--color-defalt);
+    position: relative;
+    background-color:var(--color-red);
+    margin-right: 10px;
+    padding: 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.buttons .watch-btn .icon::before{
+    content: "";
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    position: absolute;
+    top: 8.5;
+    left: 7;
+    z-index: 3;
+
+}
+
+.buttons .watch-btn .icon::after{
+    content: "";
+    width: 55px;
+    height: 65px;
+    background-color: var(--color-gray);
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 25;
+
+
+}
+.buttons .watch-btn .fa-play{
+    
+  font-size: 16px;
+  color: var(--color-);
+}
+
+/* _________________________________ Hovers ___________________________ */
+.watch-btn:hover .fa-play , .buttons:hover a{
+    color:var(--color-red);
+}
+.buttons button:hover{
+    background-color: var(--color-reed);
+}
+
+/* _____________________________________________________________________ */
+
+/* _________________________________________________ End Header Section _____________________________________________________ */
+
+/* -------------------------------------------------- End Home Section ------------------------------------------------------ */
+
+/* _________________________________________________ Chefs Section __________________________________________________________ */
+
+.chefs{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    background-color: var(--color-bg);
+    
+}
+.chefs .containar{
+    width:90%;
+    margin: auto;
+    
+    
+}
+.chef-cards{
+   
+    width: 100%;
+    display: flex;
+    column-gap: 40px;
+   
+}
+.chefs .card-item{
+    
+    transition: all 0.8s ;
+    width: 40%;
+    background-color: var(--color-pto);
+    padding-bottom: 30px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  
+
+}
+.chefs .card-item img{
+    width: 100%;
+    border-top-right-radius: 10px;
+   
+   
+
+}
+.chefs h2{
+    color:var(--color-tery);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+   padding-top: 1px;
+}
+.chefs .prg{
+    font-size: 50px;
+    font-family: 'Amatic SC', sans-serif;
+    color: var(--color-defalt);
+    margin-bottom: 3%;
+
+}
+.chefs .prg span{
+    color: var(--color-red);
+    font-family: 'Amatic SC', sans-serif;
+
+}
+.chefs .card-content h3{
+    color:var(--color-defalt);
+    font-size: 18.72px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:3%;
+
+
+} 
+.chefs .card-content h4{
+    color:var(--color-tery);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    font-weight: 400;
+
+
+}
+.chefs .prg1{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-tery);
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+.chefs ul {
+    transition: all 0.8s 0.2s;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30;
+    left: 110%;
+
+}
+.chefs ul li  {
+   margin-top: 15px;
+    
+}
+.chefs ul li a {
+    color: var(--color-secondray);
+    font-size: 18px;
+    line-height: 18px;
+}
+.chefs .phto{
+    width: 100%;
+    background-image: url('../images/team-shape.svg');
+    height: 10%;
+    position: absolute;
+    top:65%;
+
+}
+
+/* ------------------------------- Hovers -------------------------- */
+
+.chefs .card-item:hover ul{
+    position: absolute;
+    top: 25;
+    left: 85%;
+}
+.chefs .card-item:hover {
+   transform: scale(1.07);
+}
+/* ----------------------------------------------------------------------- */
+
+/* --------------------------------------------------- End Chef Section --------------------------------------------------- */
+
+/* ---------------------------------------------------- Gallery section --------------------------------------------------- */
+
+.gallery{
+    width: 100%;
+    background-color: var(--color-gray);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+
+}
+.gallery h2{
+    color: var(--color-tery);
+    font-size: 14px;
+    font-weight: 400;
+}
+.gallery .prag1{
+    font-size: 50px;
+    font-family: 'Amatic SC', sans-serif;
+    margin-bottom: 25px;
+    color: var(--color-black);
+   
+
+}
+.gallery .prag1 span {
+    color: var(--color-red);
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.gallery .containar {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 40px;
+
+}
+.gallery .groub-gallery{
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+   
+}
+.gallery .group{
+    width: 35%;
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+.gallery .group img{
+    transition: all 0.5s;
+    
+    width: 100%;
+   
+   
+   
+}
+
+.gallery .pic {
+   
+    position: relative;
+    border: 5px solid white;
+    overflow: hidden;
+
+    
+
+}
+.gallery .pic .pic-op{
+    transition: all 0.5s;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    position: absolute;
+    top:150%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.gallery .pic h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+
+}
+.gallery .pic p{
+    color: #DDDDDD;
+    font-size: 16px;
+    
+
+    
+
+}
+
+.gallery .pic:hover .pic-op{
+   
+     top:0;
+  
+ }
+ .gallery .pic:hover img{
+   
+transform: scale(1.2);
+ 
+}
+/* ------------------------------------------ End Gallery Section ------------------------------------------------------- */
+
+/* ------------------------------------------- Contact Section --------------------------------------------------------- */
+
+.contact {
+   background-color: var(--color-bg);
+    width: 100%;
+    padding-top:40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+.contact .containar{
+    width: 90%;
+    margin: auto;
+}
+.contact .title{
+   
+    text-align: center;
+}
+.contact .title h2{
+    color: var(--color-tery);
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact .title .c-prg{
+    color:var(--color-defalt);
+    font-size: 50px;
+    font-family: 'Amatic SC', sans-serif;
+}
+.contact .title .c-prg span{
+    color:var(--color-red);
+    font-family: 'Amatic SC', sans-serif;
+}
+.contact .frame iframe {
+    width: 100%;
+    height: 45vh;
+    margin-top: 21px;
+}
+.contact .details{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+.contact .details .add-item {
+    background-color: var(--color-bgr);
+    width: 49.2%;
+    display: flex;
+    
+   align-items: center;
+   padding: 22px;
+  
+   
+}
+.contact .details .add-item .icon i{
+    color: white;
+    padding: 15px;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 20px;
+
+}
+.contact .details .add-item .content h3{
+    color: var(--color-tery);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contact .details .add-item .content p ,.contact .details .add-item .content  a {
+    color: var(--color-defalt);
+    font-size: 16px;
+    text-decoration: none;
+}
+.contact .details .add-item .content span{
+    font-weight: 700;
+}
+.contact .form{
+    
+    margin-top: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.1);
+}
+.contact .form .sub{
+   width: 100%;
+   margin-top: 13px;
+}
+.contact .form input , .contact .form textarea{
+    padding: 17px;
+    font-size: 14px;
+    color: #212529;
+    border: 1px solid var(--color-tery);
+    border-radius: 3px;
+}
+.contact .form textarea{
+   width: 100%;
+   margin-top: 13px;
+  
+}
+.contact .form1{
+   
+    display: flex;
+    column-gap: 22px;
+    
+}
+.contact .form1 input {
+    width: 49.5%;
+}
+.contact .btn{
+    display: flex;
+    justify-content: center;
+}
+.contact  .btn button{
+    transition: all 1s;
+    width: 13%;
+    height: 8%;
+    padding: 10px;
+    border: none;
+    background-color: var(--color-red);
+    font-size:15px ;
+    color: white;
+    border-radius: 100vh;
+    margin-top: 40px;
+   
+  
+}
+
+input:focus , textarea:focus{
+    outline: 1px var(--color-red) solid;
+}
+.contact button:hover{
+    background-color: var(--color-reed);
+}
+/* ---------------------------------------------- End Contact Section ----------------------------------------------------- */
+
+/*  --------------------------------------------- footer Section ---------------------------------------------------------- */
+.footer{
+    background-image: url('../images/textured-metal-background.jpg');
+    background-size: cover ;
+    background-position: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.footer .foot-op{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.footer .containar{
+   position: relative;
+   z-index: 3;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    column-gap: 30px;
+    color: white;
+}
+/* ------------------------------------ Mealify --------------------------------- */
+ .footer .mealify{
+    
+    width: 22%;
+
+}
+.mealify .logo{
+    
+    display: flex;
+}
+.mealify .logo h2{
+   
+    font-size: 30px;
+    margin-left: 10px;
+    position: relative;
+
+}
+.mealify .logo h2::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-red);
+    position: absolute;
+    right: -7;
+    bottom: 20%;
+    border-radius: 50%;
+
+}
+.mealify .logo img{
+    width: 12%;
+}
+.mealify p{
+   
+    font-size: 16px;
+    
+    margin-top: 12px;
+}
+.mealify h3{
+    font-size: 18.72px;
+   
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border-bottom:2px solid var(--color-tery);
+}
+.mealify ul{
+    list-style-type: none;
+    margin-top: 15px;
+   display: flex;
+   justify-content: center;
+
+}
+.mealify ul li a{
+   
+    margin-block: 10px;
+    font-size: 25px;
+}
+.mealify ul li i{
+   
+  color: white;
+}
+/* ------------------------------------------------------------------------------- */
+/* ----------------------------- Subscribe --------------------------------------- */
+
+.Footer .subsc{
+   
+    width: 45%;
+
+}
+.Footer .subsc .sub1 h3 ,
+ .Footer .subsc .sub2 h3
+ , .data h3{
+    font-size: 18.72px;
+    font-weight: 700;
+
+}
+.Footer .subsc .sub1 p{
+    font-size: 16px;
+    margin-block: 7px;
+    margin-bottom: 16px;
+    
+
+}
+
+.Footer .subsc .sub1 input{
+    width: 82%;
+    font-size: 16px;
+    padding: 8px;
+    border: #b2b2be;
+}
+
+.Footer .subsc .sub1 button{
+    transition: all 1s;
+    background-color: var(--color-red);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+}
+
+
+.footer .subsc .sub2{
+   
+    margin-top: 13px;
+   
+}
+
+.footer .subsc .sub2 .sub2-item ul{
+   
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 12px;
+
+
+}
+.footer .subsc .sub2 .sub2-item ul li{
+   transition: all 0.8s;
+    width: 43%;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+/* -------------------------Hovers --------------------------------- */
+.footer .subsc .sub2 .sub2-item ul li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 8px;
+    width: 44%;
+}
+
+.Footer .subsc .sub1 button:hover{
+    background-color: var(--color-red);
+}
+
+
+.footer .subsc .sub2 .sub2-item ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+   
+}
+.footer .subsc .sub2 .sub2-item ul li i{
+    font-size: 14px;
+    margin-right: 7px;
+    font-weight: 700;
+}
+/* ----------------------------------------------------------------------------------- */
+/* --------------------------------- Data Section ------------------------------------- */
+
+.footer .data{
+   
+    width: 28%;
+}
+
+.footer .data ul{
+    
+    width: 90%;
+    margin: auto;
+    display: flex;
+   
+    flex-wrap: wrap;
+    margin-top: 10px;
+    list-style-type: none;
+   
+   
+}
+.footer .data ul li {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footer .data ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer .data ul li i {
+    color: var(--color-red);
+    font-size: 22px;
+    margin-right: 10px;
+}
+ 
+
+
+
+
+
+
+

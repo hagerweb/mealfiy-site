@@ -1,0 +1,531 @@
+/* ---------------------------------------------- Home Media Query ---------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    .nav-bar .containar{
+        width: 95%;
+        
+       
+    }
+    .nav-bar h1 a{
+        font-size: 20px;
+    
+    }
+    .nav-bar ul{
+        width: 60%;
+    }
+    .nav-bar ul li{
+        font-size: 14px;
+    }
+    
+
+    .header .containar{
+
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        
+        
+    }
+    .head-content{
+        width: 100%;
+        
+       
+    }
+    .head-photo{
+        width:100%;
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) {
+    
+  
+
+    .header .containar{
+
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .head-content{
+        width: 50%;
+       
+        
+       
+    }
+    .head-photo{
+        width:40%;
+       
+        
+    }
+    .head-content h2{
+        margin-top: 5px;
+        font-size: 30px;
+       
+        
+    }
+    .head-content .buttons{
+    
+        display: flex;
+        flex-direction:column ;
+        row-gap: 20px;
+       
+    
+}
+
+}
+
+@media only screen and (min-width: 900px) {
+    .head-photo{
+        width:40%;
+       
+        
+    }
+
+
+}
+@media only screen and (max-width: 1600px) {
+    .head-photo{
+        width:40%;
+       
+        
+    }
+
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+    
+    
+    .header .containar{
+
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    .head-content{
+        width: 100%;
+        
+       
+    }
+    .head-photo{
+        width:70%;
+        margin: auto;
+        
+    }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+     
+    
+    .header .containar{
+
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+    .head-content{
+        width: 45%;
+        
+       
+    }
+    .head-photo{
+        width:40%;
+        
+    }
+    
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+    .nav-bar h1 a{
+        font-size: 30px;
+        color: #212529;
+        
+    }
+    .header .containar{
+
+        width: 85%;
+       
+        margin: auto;
+        display: flex;
+        align-items: center;
+       
+        
+    }
+    .head-content{
+        width: 40%;
+       
+       
+    }
+    .head-photo{
+        width: 41%;
+        margin-right: 1%;
+        border-radius: 50%;
+        filter: drop-shadow(4px 4px 9px #000a);
+       
+    }
+    
+} */
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------- Chefs Media Query ------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+   
+    .chef-cards{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       row-gap: 50px;
+       
+    }
+    
+   .chefs .card-item{
+        width: 85%;
+       
+    }
+    .chefs .prg{
+        font-size: 40px;
+     
+        margin-bottom: 7%;
+    
+    }
+    .chefs .phto{
+       
+        top:65%;
+    
+    }
+}
+@media only screen and (min-width: 600px) {
+   
+    .chef-cards{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       row-gap: 50px;
+       
+    }
+    
+   .chefs .card-item{
+        width: 75%;
+       
+    }
+    .chefs .prg{
+        font-size: 40px;
+     
+        margin-bottom: 7%;
+    
+    }
+    .chefs .phto{
+       
+        top:66%;
+    
+    }
+
+}
+@media only screen and (min-width: 700px) {
+  
+    .chefs .phto{
+       
+        top:69%;
+    
+    }
+
+}
+@media only screen and (min-width: 760px) {
+    .chefs .phto{
+       
+        top:70%;
+    
+    }
+
+}
+@media only screen and (min-width: 786px) {
+    .chefs .prg{
+        font-size: 50px;
+        margin-bottom: 3%;
+    
+    }
+    
+    
+  
+    .chef-cards{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       row-gap: 50px;
+       
+    }
+    
+   .chefs .card-item{
+        width: 75%;
+       
+    }
+    .chefs .prg{
+        font-size: 40px;
+     
+        margin-bottom: 7%;
+    
+    }
+    .chefs .phto{
+       
+        top:71%;
+    
+    }
+}
+@media only screen and (min-width: 857px){
+    .chefs .prg{
+        font-size: 50px;
+        margin-bottom: 3%;
+    
+    }
+    .chefs .card-item{
+        width: 70%;
+       
+    }
+    .chefs .phto{
+       
+        top:72%;
+    
+    }
+
+}
+@media only screen and (min-width: 992px){
+    .chefs .prg{
+        font-size: 50px;
+        margin-bottom: 3%;
+    
+    }
+   
+    .chef-cards{
+        width: 100%;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       row-gap: 50px;
+       
+    }
+    
+   .chefs .card-item{
+        width: 30%;
+       
+    }
+    .chefs .prg{
+        font-size: 40px;
+        margin-bottom: 7%;
+    
+    }
+    .chefs .phto{
+       
+        top:55%;
+    
+    }
+    .chefs .card-item:hover ul{
+        position: absolute;
+        top: 25;
+        left: 80%;
+    }
+
+}
+@media only screen and (min-width: 1170px){
+    .chefs .prg{
+        font-size: 50px;
+        margin-bottom: 3%;
+    
+    }
+
+ .chefs .phto{
+        top:60%;
+    
+    }
+}
+@media only screen and (min-width: 1200px){
+    .chefs .prg{
+        font-size: 50px;
+        margin-bottom: 3%;
+    
+    }
+    .chef-cards{
+        width: 100%;
+        display: flex;
+       flex-wrap: nowrap;
+       justify-content: center;
+     
+       
+    }
+    
+    .chefs .card-item{
+       
+        width: 40%;
+       
+      
+    
+    }
+   
+    .chefs .phto{
+        top:59%;
+    
+    }
+}
+@media only screen and (min-width: 1250px){
+    .chefs{
+        margin-top: 20px;
+
+    }
+    .chefs .prg{
+        font-size: 50px;
+        margin-bottom: 3%;
+    
+    }
+    .chefs .phto{
+        top:61%;
+    
+    }
+
+}
+@media only screen and (min-width: 1350px){
+    .chefs{
+        margin-top: 20px;
+
+    }
+
+    .chefs .prg{
+        font-size: 50px;
+        margin-bottom: 3%;
+    
+    }
+    .chefs .phto{
+        top:65%;
+    
+    }
+    
+
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------- Gallery Media Query ----------------------------------------------------- */
+@media only screen and (max-width: 800px){
+    .gallery .groub-gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .gallery .group{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+         
+         
+     }
+
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------- Contact Media Query -------------------------------------------------- */
+@media only screen and ( max-width: 1000px){
+    .contact  .btn button{
+        
+        width: 25%;
+        height: 20%;
+      
+        font-size:10px ;
+        border-radius: 100vh;
+      
+       
+       
+      
+    }
+    
+
+}
+
+@media only screen and (min-width: 1000px){
+    
+    .contact  .btn button{
+       
+        
+        width: 13%;
+        height: 10%;
+      
+        font-size:12px ;
+       
+        border-radius: 100vh;
+        
+       
+      
+    }
+
+}
+@media only screen and (max-width: 1400px){
+
+    .contact .details{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 20px;
+    }
+    .contact .details .add-item {
+      
+        width: 90%;
+        margin: auto;
+        
+        
+      
+      
+       
+    }
+}
+    /* ------------------------------------------------------------------------------------------------------------------- */
+    /* ------------------------------------------- Footer Media Query ------------------------------------------------- */
+    @media only screen and (max-width: 1000px){
+        .footer .containar{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer .mealify , .Footer .subsc , .footer .data{
+            width: 100%;
+           margin-top: 10%;
+            
+        }
+        .Footer .subsc .sub1 input{
+            width: 100%;
+
+        }
+.Footer .subsc .sub1 button{
+    margin-top: 20px;
+    width: 100%;
+}
+.mealify .logo h2::after{
+    visibility: hidden;
+}
+
+    }
+    @media only screen and (min-width: 1000px){
+        .Footer .subsc .sub1 button{
+            margin-top: 20px;
+           
+        }
+    }
+    @media only screen and (min-width: 1500px){
+        .Footer .subsc .sub1 button{
+            margin-top: 0;
+           
+        }
+    }
